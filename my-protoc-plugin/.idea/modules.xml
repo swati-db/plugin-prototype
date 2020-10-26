@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codeGenJVM2_12.iml" filepath="$PROJECT_DIR$/.idea/modules/codeGenJVM2_12.iml" group="codeGen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codeGenJVM2_13.iml" filepath="$PROJECT_DIR$/.idea/modules/codeGenJVM2_13.iml" group="codeGen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coreJVM2_12.iml" filepath="$PROJECT_DIR$/.idea/modules/coreJVM2_12.iml" group="my-protoc-plugin-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coreJVM2_13.iml" filepath="$PROJECT_DIR$/.idea/modules/coreJVM2_13.iml" group="my-protoc-plugin-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/e2eJVM2_12.iml" filepath="$PROJECT_DIR$/.idea/modules/e2eJVM2_12.iml" group="e2e" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/e2eJVM2_13.iml" filepath="$PROJECT_DIR$/.idea/modules/e2eJVM2_13.iml" group="e2e" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protoc-gen-my-protoc-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/protoc-gen-my-protoc-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protoc-gen-my-protoc-plugin-unix.iml" filepath="$PROJECT_DIR$/.idea/modules/protoc-gen-my-protoc-plugin-unix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protoc-gen-my-protoc-plugin-windows.iml" filepath="$PROJECT_DIR$/.idea/modules/protoc-gen-my-protoc-plugin-windows.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root.iml" filepath="$PROJECT_DIR$/.idea/modules/root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root-build.iml" filepath="$PROJECT_DIR$/.idea/modules/root-build.iml" />
+    </modules>
+  </component>
+</project>

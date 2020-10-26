@@ -1,0 +1,4 @@
+[debug] "not up to date. inChanged = false, force = false
+[debug] Updating protoc-gen-my-protoc-plugin-unix...
+[debug] Done updating protoc-gen-my-protoc-plugin-unix
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.

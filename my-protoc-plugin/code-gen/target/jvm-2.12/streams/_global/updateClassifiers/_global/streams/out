@@ -1,0 +1,4 @@
+[debug] "not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/Users/swati.kumar/scala_pb_plugin/my-protoc-plugin/"), "codeGenJVM2_12")...
+[debug] Done updating ProjectRef(uri("file:/Users/swati.kumar/scala_pb_plugin/my-protoc-plugin/"), "codeGenJVM2_12")
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
