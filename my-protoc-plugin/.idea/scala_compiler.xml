@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="codeGenJVM2_12,codeGenJVM2_13,coreJVM2_12,coreJVM2_13,e2eJVM2_12,e2eJVM2_13,my-protoc-plugin_4168,protoc-gen-my-protoc-plugin,protoc-gen-my-protoc-plugin-unix,protoc-gen-my-protoc-plugin-windows,root" />
-  </component>
-</project>

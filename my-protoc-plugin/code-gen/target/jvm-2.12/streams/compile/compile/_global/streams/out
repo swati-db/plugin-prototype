@@ -1,7 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /Users/swati.kumar/scala_pb_plugin/my-protoc-plugin/project/target/.sbt-compilation-infos/codeGenJVM2_12-compile/.sbt-idea-lock ...[0m
-[0m[[0m[33mwarn[0m] [0m[0m/Users/swati.kumar/scala_pb_plugin/my-protoc-plugin/code-gen/src/main/scala/com/myplugin/compiler/CodeGenerator.scala:121:11: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: BOOL, BYTES, DOUBLE, ENUM, FIXED32, FIXED64, FLOAT, GROUP, INT32, INT64, MESSAGE, SFIXED32, SFIXED64, SINT32, SINT64, UINT32, UINT64[0m
-[0m[[0m[33mwarn[0m] [0m[0m    field.getType match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m          ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
-[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /Users/swati.kumar/scala_pb_plugin/my-protoc-plugin/project/target/.sbt-compilation-infos/codeGenJVM2_12-compile/.sbt-idea-lock.[0m

@@ -1,4 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0mCompiling 2 protobuf files to /Users/swati.kumar/scala_pb_plugin/my-protoc-plugin/e2e/target/jvm-2.13/src_managed/main/scalapb,/Users/swati.kumar/scala_pb_plugin/my-protoc-plugin/e2e/target/jvm-2.13/src_managed/main[0m
-[0m[[0m[0mdebug[0m] [0m[0mprotoc options:[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling schema /Users/swati.kumar/scala_pb_plugin/my-protoc-plugin/e2e/src/main/protobuf/gql.proto[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling schema /Users/swati.kumar/scala_pb_plugin/my-protoc-plugin/e2e/src/main/protobuf/test.proto[0m

@@ -1,1 +1,0 @@
-["sbt.Task[scala.collection.Seq[java.nio.file.Path]]",["/Users/swati.kumar/scala_pb_plugin/my-protoc-plugin/e2e/target/jvm-2.13/test-classes/com/myplugin/MyTest.class","/Users/swati.kumar/scala_pb_plugin/my-protoc-plugin/e2e/target/jvm-2.13/streams/test/compileOutputs/_global/streams/inc_compile_2.13.zip"]]

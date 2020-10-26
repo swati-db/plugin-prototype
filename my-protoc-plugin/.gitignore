@@ -1,0 +1,8 @@
+target/
+core/target/
+code-gen/target/
+project/
+.idea
+/.protoc-gen-my-protoc-plugin/
+/.protoc-gen-my-protoc-plugin-unix/
+/.protoc-gen-my-protoc-plugin-windows/
