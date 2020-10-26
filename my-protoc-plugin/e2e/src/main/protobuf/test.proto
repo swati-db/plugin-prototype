@@ -3,6 +3,7 @@ syntax = "proto3";
 package com.myplugin;
 
 import "gql.proto";
+import "test1.proto";
 
 // The greeting service definition.
 service Greeter {
@@ -15,9 +16,4 @@ service Greeter {
 // The request message containing the user's name.
 message HelloRequest {
     string name = 1;
-}
-
-// The response message containing the greetings
-message HelloReply {
-    string message = 1;
 }

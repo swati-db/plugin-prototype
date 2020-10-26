@@ -50,7 +50,7 @@ object CodeGenerator extends CodeGenApp {
 }
 
 
-class FileProcessor(p: ParsedModels, file: FileDescriptor, implicits: DescriptorImplicits) {
+class FileProcessor(p: ParsedModels, file: FileDescriptor, implicits: DescriptorImplicits, r: CodeGenRequest) {
   def initFile(): Unit = {
     val res:(Seq[String], Seq[String]) = defineMethods
     for (inputType <- res._1) {
@@ -83,7 +83,7 @@ class FileProcessor(p: ParsedModels, file: FileDescriptor, implicits: Descriptor
       }
       sb.append("\n}\n")
     }
-    if (p.queries.nonEmpty) {
+    if (p.queries(getKey).nonEmpty) {
       sb.append("type Query {")
       sb.append("\n\t")
       sb.append(renderMethod(p.queries(getKey)))
@@ -126,17 +126,19 @@ class FileProcessor(p: ParsedModels, file: FileDescriptor, implicits: Descriptor
 
   def fillTypeMaps(typeName: String, objects: scala.collection.mutable.Map[String, GraphQLType], inputField: Boolean): Unit = {
     // this is a message, so add it to the types
-    for(messageType <- file.getMessageTypes.asScala) {
-      if (typeName == messageType.getName) {
-        objects += (typeName -> GraphQLType(
-          messageType,
-          ModelDescriptor(
-            messageType.getFullName, // Need to be better
-            messageType.getName,
-            inputField,
-            messageType.getFullName, // Need to be better
-          )
-        ))
+    for (f <- r.filesToGenerate) {
+      for(messageType <- f.getMessageTypes.asScala) {
+        if (typeName == messageType.getName) {
+          objects += (typeName -> GraphQLType(
+            messageType,
+            ModelDescriptor(
+              messageType.getFullName, // Need to be better
+              messageType.getName,
+              inputField,
+              messageType.getFullName, // Need to be better
+            )
+          ))
+        }
       }
     }
   }
@@ -180,7 +182,7 @@ class Plugin(request: CodeGenRequest, implicits: DescriptorImplicits) {
         // initialize the queries and mutations for this key
         parsedModels.queries += (file.getFullName -> scala.collection.mutable.Seq())
         parsedModels.mutations += (file.getFullName -> scala.collection.mutable.Seq())
-        val fileProcessor = new FileProcessor(parsedModels, file, implicits)
+        val fileProcessor = new FileProcessor(parsedModels, file, implicits, request)
         fileProcessor.initFile()
         sb.append(fileProcessor.generateContent)
         sb.append("\n")
